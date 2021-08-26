@@ -14,7 +14,7 @@ const DetailMovie = async id => {
             return false;
         }
 
-        return movie.data;
+        return movie;
     } catch (error) {
         throw new Error(error);
     }

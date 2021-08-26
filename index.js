@@ -35,3 +35,5 @@ app.use(function (err, req, res, next) {
         body: {}
     });
 })
+
+module.exports = app;
