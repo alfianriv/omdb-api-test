@@ -1,0 +1,15 @@
+datasource db {
+    url      = env("MYSQLURL")
+    provider = "sqlite"
+}
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+model Logger {
+    id        Int      @id @default(autoincrement())
+    api       String
+    params    String?
+    createdAt DateTime @default(now())
+}
