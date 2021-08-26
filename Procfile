@@ -1,1 +1,1 @@
-web: npm start-sqlite
+web: npm run start-sqlite
