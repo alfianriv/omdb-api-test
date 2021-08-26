@@ -1,1 +1,1 @@
-web: yarn start-sqlite
+web: yarn start
