@@ -10,7 +10,7 @@
     "dev": "nodemon index",
     "test": "jest --forceExit",
     "start": "npx prisma migrate && npx prisma generate && node index",
-    "start-sqlite": "npx prisma generate --schema ./prisma/postgres.schema.prisma && npx prisma migrate && node index"
+    "start-postgres": "npx prisma generate --schema ./prisma/postgres.schema.prisma && npx prisma migrate dev --schema=./prisma/postgres.schema.prisma && node index"
   },
   "dependencies": {
     "@prisma/client": "^2.30.0",
