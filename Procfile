@@ -1,1 +1,1 @@
-web: npm run start-sqlite
+web: npm run start-postgres
