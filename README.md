@@ -33,5 +33,14 @@ npx prisma generate
 yarn dev
 ```
 
+List API:
+```python
+# search list movies
+http://localhost:3000/api/search?search=marvel
+
+# get detail movies by id
+http://localhost:3000/api/detail/tt3067038
+```
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
