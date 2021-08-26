@@ -8,7 +8,8 @@
   "scripts": {
     "format": "prettier --write \"src/**/*.js\" \"index.js\" \"test/**/*.js\"",
     "dev": "nodemon index",
-    "test": "jest --forceExit"
+    "test": "jest --forceExit",
+    "start": "npx prisma migrate && npx prisma generate && node index"
   },
   "dependencies": {
     "@prisma/client": "^2.30.0",
@@ -17,7 +18,8 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "jest": "^27.0.6",
-    "supertest": "^6.1.6"
+    "supertest": "^6.1.6",
+    "vercel": "^23.1.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.12",
