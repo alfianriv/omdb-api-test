@@ -1,0 +1,26 @@
+{
+  "name": "omdb-test",
+  "version": "1.0.0",
+  "description": "restfull api omdb for test",
+  "main": "index.js",
+  "author": "Alfian Rivaldi",
+  "license": "MIT",
+  "scripts": {
+    "format": "prettier --write \"src/**/*.js\" \"index.js\" \"test/**/*.js\"",
+    "dev": "nodemon index",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@prisma/client": "^2.30.0",
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jest": "^27.0.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12",
+    "prettier": "^2.3.2",
+    "prisma": "^2.30.0"
+  }
+}
